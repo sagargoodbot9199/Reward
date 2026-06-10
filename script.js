@@ -1,4 +1,4 @@
-let currentCoins = parseInt(localStorage.getItem('savedCoins')) || 0; 
+)let currentCoins = parseInt(localStorage.getItem('savedCoins')) || 0; 
 let userData = JSON.parse(localStorage.getItem('appUserData')) || null; 
 let transactionHistory = JSON.parse(localStorage.getItem('appHistory')) || [];
 let globalWithdrawRequests = JSON.parse(localStorage.getItem('adminWithdrawRequests')) || [];
@@ -356,4 +356,3 @@ function approveRequest(reqId) {
 
     alert("रिक्वेस्ट को सफलतापूर्वक 'सफल' मार्क कर दिया गया है!");
     updateAdminPanelUI();
-}
